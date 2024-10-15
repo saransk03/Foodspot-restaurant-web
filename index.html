@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://ik.imagekit.io/saransk03/assests/Foodspot%20web/logo.png"
+      type="image/x-icon"
+    />
+    <title>FoodSpot | Saran Kumar</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavoon&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css file -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="w-[80%] rounded-[30px] shadow-black shadow-md mx-auto bg-white sticky top-2 z-20 ">
+      <div class="mx-auto grid grid-cols-1 py-[10px]">
+        <div class="flex justify-around items-center">
+          <div class="flex justify-start items-center gap-2">
+            <img
+              src="https://ik.imagekit.io/saransk03/assests/Foodspot%20web/logo.png"
+              alt="logo-img"
+              class="w-[40px]"
+            />
+            <p class="text-[25px] font-[700] text-[#EBB600] logo">
+              <span class="text-[#D10817]">Food</span>Spot
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <ul class="flex gap-6 relative">
+              <li class="nav-items font-['Raleway'] font-[700] text-[15px]">
+                <a href="#home">Home </a>
+              </li>
+              <li class="nav-items font-['Raleway'] font-[700] text-[15px]">
+                <a href="#menu">Menu </a>
+              </li>
+              <li class="nav-items font-['Raleway'] font-[700] text-[15px]">
+                <a href="#servies">Servies </a>
+              </li>
+              <li class="nav-items font-['Raleway'] font-[700] text-[15px]">
+                <a href="#contact">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex gap-8 relative">
+           <div id="i-items" class=" flex justify-center items-center relative">
+              <a href="">
+                <i class="fa-solid fa-cart-shopping text-[22px]"></i>
+              </a>
+              <p  class="bg-black px-2 py-1 rounded-sm text-[12px] text-white font-[600] font-['Raleway'] absolute top-[30px]">Carts</p>
+           </div>
+            <div id="i-items" class=" flex justify-center items-center relative">
+              <a href="#offers">
+                <img
+                  src="./Assests/discount.png"
+                  alt="offer img"
+                  class="w-[22px]"
+                />
+              </a>
+              <p class="bg-black px-2 py-1 rounded-sm text-[12px] text-white font-[600] font-['Raleway'] absolute top-[30px]">Offers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+     
+    <section id="home">
+
+      <div class="2xl:container mx-auto">
+        <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div
+            class="flex flex-col justify-center items-center md:items-start order-2 md:order-1"
+          >
+            <h1
+              class="md:text-[55px] text-[40px] ml-[20px] md:ml-[0px] home-h text-[#D10817] leading-[50px]"
+            >
+              "Your Destination
+            </h1>
+            <p class="home-h ml-[20px] text-[25px] md:text-[35px]">
+              For Delicious Moments"
+            </p>
+            <p class="ml-[20px] mt-3 text-white font-['Kavoon']">
+              Where delicious flavors meet a cozy atmosphere. Join us and let
+              your taste buds embark on an unforgettable adventure!
+            </p>
+            <div class="flex ml-[20px] mt-[20px] gap-4">
+              <a
+                href=""
+                class="bg-[#D10817] btn px-3 py-1 text-[#EBB600] font-['Raleway'] font-[600] rounded-[5px]"
+              >
+                Book Table
+              </a>
+              <a
+                href=""
+                class="border-[3px] border-[#D10817] btn px-3 py-1 text-[#D10817] font-['Raleway'] font-[600] rounded-[5px]"
+              >
+                Order Now
+              </a>
+            </div>
+
+            <div class="flex mt-[100px] gap-9">
+              <div id="box1" class="flex justify-center items-center box">
+                <img
+                  src="./Assests/biryani.png"
+                  alt=""
+                  class="w-[120px] z-10"
+                />
+                <div class="box-card"></div>
+              </div>
+              <div id="box2" class="flex justify-center items-center box">
+                <img src="./Assests/burger.png" alt="" class="w-[100px] z-10" />
+                <div class="box-card"></div>
+              </div>
+              <div id="box3" class="flex justify-center items-center box">
+                <img
+                  src="./Assests/fried-chicken.png"
+                  alt=""
+                  class="w-[120px] z-10"
+                />
+                <div class="box-card"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center order-1 md:order-2">
+            <img
+              id="home-img"
+              class="scale-up-top"
+              src="./Assests/tandoori chicken.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--offer Swiper -->
+  <div id="offers" class="2xl:container mx-auto py-10">
+      <div class="w-[80%] mx-auto flex justify-start items-center">
+        <h1 class="home-h text-[40px] ml-5 text-[#D10817]">
+           Today's <span class="text-black">Offers</span> 
+        </h1>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./Assests/offer2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./Assests/offer3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./Assests/offer1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+  </div>
+
+    <!-- Our menu  -->
+  <section id="menu">
+    <div class="2xl:container mx-auto py-[30px]">
+      <div class="w-[80%] mx-auto grid grid-cols-1">
+        <div class="flex justify-start items-start">
+          <h1 class="home-h text-[40px] ml-5 text-[#D10817]">Our <span class="text-black">
+            Menus</span>
+          </h1>
+        </div>
+        <div id="card-container" class="flex  justify-center items-center gap-8
+        mt-[30px] flex-wrap">   
+
+          <div id="card" class="flex flex-col justify-center items-center  bg-gray-200 shadow-black shadow-md w-[250px]
+          rounded-[20px] py-5 flex-shrink">        
+            <img src="./Assests/home-bg.jpg" alt="" class="w-[210px] h-full object-fill rounded-[10px]">
+              <h2 class="text-[20px] font-['Raleway'] font-[900] text-black
+              mt-3">Chicken Tandoori</h2>
+              <div class="flex justify-between items-center">
+                <p class="text-[18px] font-['Raleway'] text-gray-700 font-[800]">
+                  Rs.250
+                </p>
+                <p class="font-['Raleway'] font-[600] text-[14px] text-gray-700">
+                  <i class="fa-solid fa-star text-[orange] text-[12px] pr-1"></i>4.5
+                </p>
+              <button class="bg-[#D10817] text-white font-['Raleway']
+              font-[700] text-[15px] px-3 py-1 rounded-[10px] mt-2">Buy Now</button>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
