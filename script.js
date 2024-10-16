@@ -48,13 +48,13 @@ box3Element.addEventListener("click", () => {
   homeImg.classList.add("scale-up-top");
 });
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// var swiper = new Swiper(".mySwiper", {
+//   spaceBetween: 30,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
 
 const cardItems = document.getElementById("card");
 
@@ -70,7 +70,7 @@ async function cardData() {
     if (response.ok) {
       data.menu.forEach((menu) => {
         const card = document.createElement("div");
-        card.className = "flex flex-col justify-start items-center bg-gray-200 shadow-black shadow-md w-[250px] rounded-[20px] px-2 py-5 flex-shrink";
+        card.className = "flex flex-col justify-start items-center bg-gray-200 shadow-black shadow-md w-[250px] rounded-[20px] px-2 py-5 flex-shrink card";
         card.innerHTML = `
                     <img src="${menu.image}" alt="" class="w-[210px] h-[162px] object-cover rounded-[10px]">
                     <h2 class="text-[20px] font-['Raleway'] font-[900] text-black
@@ -81,7 +81,7 @@ async function cardData() {
                     <p class="font-['Raleway'] font-[600] text-[14px] text-gray-700">
                       Rate : <i class="fa-solid fa-star text-[orange] text-[12px] pr-1"></i>${menu.rating}
                     </p>
-                    <button class="bg-[#D10817] text-white font-['Raleway']
+                    <button class="bg-[#D10817] btn text-white font-['Raleway']
                     font-[700] text-[15px] px-3 py-1 rounded-[10px] mt-2">Buy Now</button>
                 `;
         cardContainer.appendChild(card);
@@ -93,3 +93,33 @@ async function cardData() {
 }
 
  cardData();
+
+const serviceName = document.getElementById("servicename")
+const serviceFirst = document.getElementById("servicefirst")
+const serviceDetails = document.getElementById("details")
+
+// sevrice swipper
+var swiperS = new Swiper(".mySwiper-s", {
+  effect: "cards",
+  grabCursor: true,
+  on: {
+    slideChange: function () {
+      // Get the active slide index
+      const activeIndex = swiperS.activeIndex; // This gives you the active slide's index (starting from 0)
+
+      // Get the active slide element
+      const activeSlide = swiperS.slides[activeIndex];
+
+      // Fetch the data attributes from the active slide
+      const serviceName = activeSlide.getAttribute('data-service');
+      const serviceDetails = activeSlide.getAttribute('data-details');
+
+      // Update the service name and details in the DOM
+      document.getElementById('servicename').innerHTML = `<span class="text-[#D10817]">${serviceName.split(' ')[0]}</span> ${serviceName.split(' ').slice(1).join(' ')}`;
+      document.getElementById('details').textContent = serviceDetails;
+
+    }
+  }
+});
+
+

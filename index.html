@@ -20,7 +20,10 @@
 
     <!-- Css file -->
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,7 +36,9 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="w-[80%] rounded-[30px] shadow-black shadow-md mx-auto bg-white sticky top-2 z-20 ">
+    <nav 
+      class="w-fill rounded-b-[0px] shadow-black shadow-md mx-auto bg-white sticky top-0 left-0 z-20"
+    >
       <div class="mx-auto grid grid-cols-1 py-[10px]">
         <div class="flex justify-around items-center">
           <div class="flex justify-start items-center gap-2">
@@ -56,7 +61,7 @@
                 <a href="#menu">Menu </a>
               </li>
               <li class="nav-items font-['Raleway'] font-[700] text-[15px]">
-                <a href="#servies">Servies </a>
+                <a href="#services">Services </a>
               </li>
               <li class="nav-items font-['Raleway'] font-[700] text-[15px]">
                 <a href="#contact">Contact us</a>
@@ -65,13 +70,8 @@
           </div>
 
           <div class="flex gap-8 relative">
-           <div id="i-items" class=" flex justify-center items-center relative">
-              <a href="">
-                <i class="fa-solid fa-cart-shopping text-[22px]"></i>
-              </a>
-              <p  class="bg-black px-2 py-1 rounded-sm text-[12px] text-white font-[600] font-['Raleway'] absolute top-[30px]">Carts</p>
-           </div>
-            <div id="i-items" class=" flex justify-center items-center relative">
+           
+            <div id="i-items" class="flex justify-center items-center relative">
               <a href="#offers">
                 <img
                   src="./Assests/discount.png"
@@ -79,17 +79,35 @@
                   class="w-[22px]"
                 />
               </a>
-              <p class="bg-black px-2 py-1 rounded-sm text-[12px] text-white font-[600] font-['Raleway'] absolute top-[30px]">Offers</p>
+              <p
+                class="bg-black px-2 py-1 rounded-sm text-[12px] text-white font-[600] font-['Raleway'] absolute top-[30px]"
+              >
+                Offers
+              </p>
             </div>
+
+            <div id="i-items" class="flex justify-center items-center relative">
+              <a href="#reviews">
+                <img
+                src="./Assests/customer-review.png"
+                alt="offer img"
+                class="w-[28px]"
+              />
+              </a>
+              <p
+                class="bg-black px-2 py-1 rounded-sm text-[12px] text-white font-[600] font-['Raleway'] absolute top-[30px]"
+              >
+                Reviews
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
     </nav>
-
     <!-- Hero section -->
-     
-    <section id="home">
 
+    <section id="home">
       <div class="2xl:container mx-auto">
         <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2">
           <div
@@ -158,62 +176,196 @@
     </section>
 
     <!--offer Swiper -->
-  <div id="offers" class="2xl:container mx-auto py-10">
+    <section id="offers" class="2xl:container mx-auto py-[60px]">
       <div class="w-[80%] mx-auto flex justify-start items-center">
         <h1 class="home-h text-[40px] ml-5 text-[#D10817]">
-           Today's <span class="text-black">Offers</span> 
+          Today's <span class="text-black">Offers</span>
         </h1>
       </div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./Assests/offer2.jpg" alt="" />
+            <img id="offer-img" src="./Assests/offer2.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./Assests/offer3.jpg" alt="" />
+            <img id="offer-img" src="./Assests/offer3.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./Assests/offer1.jpg" alt="" />
+            <img id="offer-img" src="./Assests/offer1.jpg" alt="" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-  
-  </div>
+    </section>
 
     <!-- Our menu  -->
-  <section id="menu">
-    <div class="2xl:container mx-auto py-[30px]">
-      <div class="w-[80%] mx-auto grid grid-cols-1">
-        <div class="flex justify-start items-start">
-          <h1 class="home-h text-[40px] ml-5 text-[#D10817]">Our <span class="text-black">
-            Menus</span>
-          </h1>
-        </div>
-        <div id="card-container" class="flex  justify-center items-center gap-8
-        mt-[30px] flex-wrap">   
-
-          <div id="card" class="flex flex-col justify-center items-center  bg-gray-200 shadow-black shadow-md w-[250px]
-          rounded-[20px] py-5 flex-shrink">        
-            <img src="./Assests/home-bg.jpg" alt="" class="w-[210px] h-full object-fill rounded-[10px]">
-              <h2 class="text-[20px] font-['Raleway'] font-[900] text-black
-              mt-3">Chicken Tandoori</h2>
+    <section id="menu">
+      <div class="2xl:container mx-auto">
+        <div class="w-[80%] mx-auto grid grid-cols-1">
+          <div class="flex justify-start items-start">
+            <h1 class="home-h text-[40px] ml-5 text-[#D10817]">
+              Our <span class="text-black"> Menus</span>
+            </h1>
+          </div>
+          <div
+            id="card-container"
+            class="flex justify-center items-center gap-8 mt-[30px] flex-wrap"
+          >
+            <div
+              id="card"
+              class="flex flex-col justify-center items-center bg-gray-200 shadow-black shadow-md w-[250px] rounded-[20px] py-5 flex-shrink"
+            >
+              <img
+                src="./Assests/home-bg.jpg"
+                alt=""
+                class="w-[210px] h-full object-fill rounded-[10px]"
+              />
+              <h2
+                class="text-[20px] font-['Raleway'] font-[900] text-black mt-3"
+              >
+                Chicken Tandoori
+              </h2>
               <div class="flex justify-between items-center">
-                <p class="text-[18px] font-['Raleway'] text-gray-700 font-[800]">
+                <p
+                  class="text-[18px] font-['Raleway'] text-gray-700 font-[800]"
+                >
                   Rs.250
                 </p>
-                <p class="font-['Raleway'] font-[600] text-[14px] text-gray-700">
-                  <i class="fa-solid fa-star text-[orange] text-[12px] pr-1"></i>4.5
+                <p
+                  class="font-['Raleway'] font-[600] text-[14px] text-gray-700"
+                >
+                  <i class="fa-solid fa-star text-[orange] text-[12px] pr-1"></i
+                  >4.5
                 </p>
-              <button class="bg-[#D10817] text-white font-['Raleway']
-              font-[700] text-[15px] px-3 py-1 rounded-[10px] mt-2">Buy Now</button>
+                <button
+                  class="bg-[#D10817] text-white btn font-['Raleway'] font-[700] text-[15px] px-3 py-1 rounded-[10px] mt-2"
+                >
+                  Buy Now
+                </button>
+              </div>
             </div>
-        </div>
-
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="2xl:container mx-auto">
+        <div class="w-[80%] mx-auto grid grid-cols-1">
+          <div>
+            <h1 class="home-h text-[40px] ml-5 text-[#D10817]">
+              Our <span class="text-black">Services</span>
+            </h1>
+          </div>
+        </div>
+          <div class="w-[80%] grid grid-cols-1 lg:grid-cols-2 mx-auto py-6 mt-4" id="services-content">
+            <!-- Swiper -->
+            <div class="flex justify-center items-center py-3 px-6">
+              <div class="swiper-s mySwiper-s ">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
+                  data-service="Dine-in Service" 
+                  data-details="Experience a warm, inviting atmosphere where our friendly staff delivers exceptional service at your table. Whether it's a casual lunch or a special occasion, we provide an environment perfect for any gathering. Enjoy freshly prepared dishes and an ambiance designed to elevate your dining experience. Relax, unwind, and let us take care of everything.">
+                    <img src="./Assests/dinein.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px] object-cover shadow-lg shadow-black">
+                    Dine-in Service
+                  </div>
+
+                  <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
+                  data-service="Home Delivery" 
+                  data-details="Craving your favorite meal but can’t make it to the restaurant? We’ve got you covered! Our reliable delivery service brings hot, freshly made dishes straight to your door. Whether it's lunch, dinner, or a late-night snack, enjoy restaurant-quality meals from the comfort of your home.">
+                    <img src="./Assests/delivery.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px] object-cover shadow-lg shadow-black">
+                    Home Delivery
+                  </div>
+
+                  <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
+                  data-service="Catering Services" 
+                  data-details="Make your next event unforgettable with our customizable catering services. Whether it’s a wedding, corporate event, or family gathering, we offer a wide range of menu options to suit your needs. From small parties to large-scale events, our team ensures timely, professional service and mouth-watering dishes that impress every guest.">
+                    <img src="./Assests/catering.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px]  object-cover shadow-lg shadow-black">
+                    Catering Services
+                  </div>
+
+                  <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
+                  data-service="Chef’s Table Experience" 
+                  data-details="Elevate your dining with an exclusive Chef’s Table experience, where every dish is specially crafted for you. Watch as our head chef creates a bespoke multi-course menu using the freshest ingredients and culinary creativity. Ideal for food enthusiasts or special celebrations, this intimate experience offers personalized service and unparalleled flavors in a private setting.">
+                    <img src="./Assests/chef.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px] object-cover shadow-lg shadow-black">
+                   Chef’s Table Experience
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="flex flex-col justify-start items-start py-6 ">
+              <div class="flex flex-col ">
+                <h1 id="servicename" class="font-['Raleway'] text-center lg:text-start text-[30px] font-[900] py-3"><span class="text-[#D10817]" id="servicefirst">Dine-in</span> Service</h1>
+                <p class="font-['Raleway'] font-[600] w-[380px]" id="details">Experience a warm, inviting atmosphere where our friendly staff delivers exceptional service at your table. Whether it's a casual lunch or a special occasion, we provide an environment perfect for any gathering. Enjoy freshly prepared dishes and an ambiance designed to elevate your dining experience. Relax, unwind, and let us take care of everything.</p>
+               
+              </div>
+              <div class=" flex justify-center items-center text-start mt-4">
+                <p class="font-['Raleway'] font-[700] text-[15px] text-gray-600">Swipe the card<i class="fa-solid fa-arrow-right-long px-1"></i></p>
+              </div>
+            </div>
+
+          </div>
+       
+      </div>
+    </section>
+
+    <!-- customer-review -->
+     <section id="reviews">
+      <div class="2xl:container mx-auto">
+       <div class="w-[80%] mx-auto grid grid-cols-1">
+          <h1 class="home-h text-[37px] ml-5 text-[#D10817]">
+            Customer's <span class="text-black">Review</span>
+          </h1>
+       </div>
+       <div class="w-[80%] mx-auto grid grid-cols-1 py-4 mt-6">
+        <div class="flex justify-center items-center gap-7">
+
+          <div class="w-[250px] flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
+            <div class="bg-yellow-600 w-[120px] h-[120px] rounded-[150px] flex justify-center items-center">
+              <img src="./Assests/zara.jpg" alt="" class=" object-cover w-[110px] h-[110px] rounded-[150px]">
+            </div>
+            <h2 class="text-[25px] font-['Raleway'] text-center font-[900] text-black mt-3">
+              Zara
+            </h2>
+            <p class="text-[13px] font-['Raleway'] text-center text-gray-700 mt-2 font-[500]">
+              "Great experience! The food was delicious and perfectly seasoned, especially the grilled Chicken. The service was friendly. Definitely coming back!"
+            </p>
+          </div>
+
+          <div class="w-[250px] flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
+            <div class="bg-yellow-600 w-[120px] h-[120px] rounded-[150px] flex justify-center items-center">
+              <img src="./Assests/vignesh.jpg" alt="" class=" w-[110px] h-[110px] rounded-[150px]">
+            </div>
+            <h2 class="text-[25px] font-['Raleway'] text-center font-[900] text-black mt-3">
+              Vignesh
+            </h2>
+            <p class="text-[13px] font-['Raleway'] text-center text-gray-700 mt-2 font-[500]">
+              "The food was delicious, the service was friendly, and the ambiance was cozy. I highly recommend this restaurant to anyone looking for a great dining experience."
+            </p>
+          </div>
+
+          <div class="w-[250px] flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
+            <div class="bg-yellow-600 w-[120px] h-[120px] rounded-[150px] flex justify-center items-center">
+              <img src="./Assests/rana.jpg" alt="" class=" w-[110px] h-[110px] rounded-[150px]">
+            </div>
+            <h2 class="text-[25px] font-['Raleway'] text-center font-[900] text-black mt-3">
+              Rana
+            </h2>
+            <p class="text-[13px] font-['Raleway'] text-center text-gray-700 mt-2 font-[500]">
+              "Lovely atmosphere, The ambiance was cozy, and the menu had great options, but it took too long for the food to arrive. The steak was fantastic, though, and worth the wait!"
+            </p>
+          </div>
+        
+        </div>
+
+
+
+       </div>
+      </div>
+     </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
