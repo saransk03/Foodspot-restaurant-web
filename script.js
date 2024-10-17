@@ -13,7 +13,7 @@ box1Element.addEventListener("click", () => {
 
   // Force reflow (restarting the animation by removing and re-adding the class)
   void homeImg.offsetWidth
-  
+
   // Add the class to trigger the animation
   homeImg.classList.add("scale-up-top");
 });
@@ -70,19 +70,19 @@ async function cardData() {
     if (response.ok) {
       data.menu.forEach((menu) => {
         const card = document.createElement("div");
-        card.className = "flex flex-col justify-start items-center bg-gray-200 shadow-black shadow-md w-[250px] rounded-[20px] px-2 py-5 flex-shrink card";
+        card.className = "flex flex-col justify-start items-center bg-gray-200 shadow-black shadow-md md:w-[250px] md:h-auto w-[130px] h-[220px] rounded-[10px] md:rounded-[20px] px-2 py-5 z-10 flex-shrink card";
         card.innerHTML = `
-                    <img src="${menu.image}" alt="" class="w-[210px] h-[162px] object-cover rounded-[10px]">
-                    <h2 class="text-[20px] font-['Raleway'] font-[900] text-black
+                    <img src="${menu.image}" alt="" class="md:w-[210px] md:h-[162px] w-[120px] h-[80px] object-cover rounded-[10px]">
+                    <h2 class="md:text-[20px] text-center text-[12px] font-['Raleway'] font-[900] text-black
                     mt-3">${menu.dish}</h2>
-                    <p class="text-[18px] font-['Raleway'] text-gray-700 font-[800]">
+                    <p class="md:text-[18px] text-[10px] font-['Raleway'] text-gray-700 font-[800]">
                      Price : Rs.${menu.price}
                     </p>
-                    <p class="font-['Raleway'] font-[600] text-[14px] text-gray-700">
+                    <p class="font-['Raleway'] font-[600] text-[8px] md:text-[14px] text-gray-700">
                       Rate : <i class="fa-solid fa-star text-[orange] text-[12px] pr-1"></i>${menu.rating}
                     </p>
                     <button class="bg-[#D10817] btn text-white font-['Raleway']
-                    font-[700] text-[15px] px-3 py-1 rounded-[10px] mt-2">Buy Now</button>
+                    font-[700] text-[8px] md:text-[15px] px-3 py-1 rounded-[10px] mt-2">Buy Now</button>
                 `;
         cardContainer.appendChild(card);
       });
