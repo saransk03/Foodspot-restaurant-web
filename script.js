@@ -12,8 +12,8 @@ box1Element.addEventListener("click", () => {
   homeImg.classList.remove("scale-up-top");
 
   // Force reflow (restarting the animation by removing and re-adding the class)
-  void homeImg.offsetWidth;
-
+  void homeImg.offsetWidth
+  
   // Add the class to trigger the animation
   homeImg.classList.add("scale-up-top");
 });

@@ -37,9 +37,9 @@
 
     <!-- Navbar -->
     <nav 
-      class="w-fill rounded-b-[0px] shadow-black shadow-md mx-auto bg-white sticky top-0 left-0 z-20"
+      class="2xl:container rounded-b-[0px] shadow-black shadow-md mx-auto bg-white sticky top-0 left-0 z-20"
     >
-      <div class="mx-auto grid grid-cols-1 py-[10px]">
+      <div class="w-[80%] mx-auto grid grid-cols-1 py-[10px]">
         <div class="flex justify-around items-center">
           <div class="flex justify-start items-center gap-2">
             <img
@@ -133,7 +133,7 @@
                 Book Table
               </a>
               <a
-                href=""
+                href="#menu"
                 class="border-[3px] border-[#D10817] btn px-3 py-1 text-[#D10817] font-['Raleway'] font-[600] rounded-[5px]"
               >
                 Order Now
@@ -182,19 +182,15 @@
           Today's <span class="text-black">Offers</span>
         </h1>
       </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img id="offer-img" src="./Assests/offer2.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img id="offer-img" src="./Assests/offer3.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img id="offer-img" src="./Assests/offer1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+      <div class="w-[70%] flex justify-center items-center mx-auto gap-4 mt-[30px]">
+            <img class="w-[300px] rounded-lg" src="./Assests/offer1.jpg" alt=""  />
+            <div class="flex flex-col gap-5">
+              <div class="flex justify-center gap-4">
+                <img class="w-[280px]  rounded-lg" src="./Assests/offer2.jpg" alt=""  />
+                <img class="w-[280px]  rounded-lg" src="./Assests/offer4.jpg" alt=""  />
+              </div>
+              <img class="w-[600px]  rounded-lg" src="./Assests/offer3.jpg" alt=""  />
+            </div>
       </div>
     </section>
 
@@ -320,9 +316,9 @@
           </h1>
        </div>
        <div class="w-[80%] mx-auto grid grid-cols-1 py-4 mt-6">
-        <div class="flex justify-center items-center gap-7">
+        <div class="flex justify-center items-center gap-7 card-wrapper">
 
-          <div class="w-[250px] flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
+          <div class="review review-1 flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
             <div class="bg-yellow-600 w-[120px] h-[120px] rounded-[150px] flex justify-center items-center">
               <img src="./Assests/zara.jpg" alt="" class=" object-cover w-[110px] h-[110px] rounded-[150px]">
             </div>
@@ -330,11 +326,11 @@
               Zara
             </h2>
             <p class="text-[13px] font-['Raleway'] text-center text-gray-700 mt-2 font-[500]">
-              "Great experience! The food was delicious and perfectly seasoned, especially the grilled Chicken. The service was friendly. Definitely coming back!"
+              "Great experience! The food was delicious and perfectly seasoned, especially the grilled Chicken. The service was friendly and Smooth presenting. Definitely coming back!"
             </p>
           </div>
 
-          <div class="w-[250px] flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
+          <div class="review review-2 flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
             <div class="bg-yellow-600 w-[120px] h-[120px] rounded-[150px] flex justify-center items-center">
               <img src="./Assests/vignesh.jpg" alt="" class=" w-[110px] h-[110px] rounded-[150px]">
             </div>
@@ -346,7 +342,7 @@
             </p>
           </div>
 
-          <div class="w-[250px] flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
+          <div class="review review-3 flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
             <div class="bg-yellow-600 w-[120px] h-[120px] rounded-[150px] flex justify-center items-center">
               <img src="./Assests/rana.jpg" alt="" class=" w-[110px] h-[110px] rounded-[150px]">
             </div>
@@ -357,12 +353,171 @@
               "Lovely atmosphere, The ambiance was cozy, and the menu had great options, but it took too long for the food to arrive. The steak was fantastic, though, and worth the wait!"
             </p>
           </div>
+
+          <div class="review review-4 flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
+            <div class="bg-yellow-600 w-[120px] h-[120px] rounded-[150px] flex justify-center items-center">
+              <img src="./Assests/krish.jpg" alt="" class=" w-[110px] h-[110px] rounded-[150px]">
+            </div>
+            <h2 class="text-[25px] font-['Raleway'] text-center font-[900] text-black mt-3">
+              Krish
+            </h2>
+            <p class="text-[13px] font-['Raleway'] text-center text-gray-700 mt-2 font-[500]">
+              "Amazing flavors and excellent service! The dishes were vibrant and full of flavor, especially the seafood. The staff were attentive. I highly recommend this place!"
+            </p>
+          </div>
         
         </div>
 
 
 
        </div>
+      </div>
+     </section>
+
+    <!-- Contact -->
+     <section id="contact">
+      <div class="2xl:container mx-auto">
+        <div class="w-[90%] md:w-[90%] lg:w-[75%] grid grid-cols-1 mx-auto">
+          <div class=" flex justify-between items-center  mt-[-20px]">
+            <div class="flex justify-start items-center gap-2">
+              <img
+                src="https://ik.imagekit.io/saransk03/assests/Foodspot%20web/logo.png"
+                alt="logo-img"
+                class="w-[40px]"
+              />
+              <p class="text-[25px] font-[700] text-white logo">
+                <span class="text-[#D10817]">Food</span>Spot
+              </p>
+            </div>
+  
+            <div class="flex justify-center items-center">
+              <ul class="flex gap-6 relative">
+                <li class="font-['Raleway'] font-[700] text-white hover:text-red-700  transition-all transition-[0.3s ease] text-[15px]">
+                  <a href="#home">Home </a>
+                </li>
+                <li class="font-['Raleway'] font-[700] text-white hover:text-red-700  transition-all transition-[0.3s ease] text-[15px]">
+                  <a href="#menu">Menu </a>
+                </li>
+                <li class="font-['Raleway'] font-[700] text-white hover:text-red-700  transition-all transition-[0.3s ease] text-[15px]">
+                  <a href="#services">Services </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[90%] md:w-[90%] lg:w-[75%] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto">
+          
+          <div class="flex flex-col justify-center items-center lg:mt-[40px] bg-gray-800 px-2 py-2 rounded-2xl">
+            <div class="flex flex-col items-start justify-center">
+              <h1 class="font-[400] text-[38px] text-white font-['Kavoon'] leading-10" >
+                Contact Us
+              </h1>
+              <p class="font-[700] text-[12px] text-yellow-600 font-['Raleway']">
+                Feel free to reach out to us with any enquiries.
+              </p>
+            </div>
+
+            <div class="flex justify-center items-center ml-[40px] lg:mt-[30px] ">
+              <form class="flex flex-col justify-center items-center gap-5">
+                <div class="flex flex-col justify-center items-start">
+                  <label for="name" class="font-[600] text-[14px] text-white font-['Raleway'] py-1">Name :</label>
+                  <input type="text" id="name" name="name" placeholder="Sweet name please" required class=" bg-[transparent] font-['Raleway'] w-[300px] font-[700] placeholder:text-gray-500 rounded-[5px] text-white text-[12px] border-b-[2px] border-white px-2 outline-none pt-2"/>
+                </div>
+               <div class="flex flex-col justify-center items-start">
+                  <label for="email" class="font-[600] text-[14px] text-white font-['Raleway'] py-1">Email:</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email" required class=" bg-[transparent] font-['Raleway'] w-[300px] font-[700] placeholder:text-gray-500 rounded-[5px] text-white text-[12px] border-b-[2px] border-white px-2 outline-none pt-2" />
+               </div>
+                <div class="flex flex-col justify-center items-start">
+                  <label for="phone" class="font-[600] text-[14px] text-white font-['Raleway'] py-1">Phone:</label>
+                  <input type="tel" id="phone" name="phone" required  placeholder="Enter your Number" required class=" bg-[transparent] font-['Raleway'] w-[300px] font-[700] placeholder:text-gray-500 rounded-[5px] text-white text-[12px] border-b-[2px] border-white px-2 outline-none pt-2"/>
+                </div>
+                <div class="flex flex-col justify-center items-start">
+                  <label for="message" class="font-[600] text-[14px] text-white font-['Raleway'] py-1">Message:</label>
+                  <textarea id="message" name="message" required placeholder="Only Enquiries" required class=" bg-[transparent] font-['Raleway'] w-[300px] font-[700] placeholder:text-gray-500 rounded-[5px] text-white text-[12px] border-b-[2px] border-white px-2 outline-none pt-2"></textarea>
+                </div>
+                <button  class="bg-[darkred] btn px-4 py-2 text-[#EBB600] text-[15px] font-['Raleway'] font-[800] rounded-[5px]">
+                  Sumbit
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col mt-[40px] gap-4">
+            <h2 class="font-[400] text-center text-[20px] text-white font-['Kavoon'] my-4">
+              Contact Information
+            </h2>
+            <div class="flex justify-around items-center my-3">
+              <div class="flex flex-col justify-cenyer items-center ">
+                <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
+                  <i class="fa-solid fa-phone text-white text-[30px]"></i>
+                </div>
+                <p class="font-[700] text-[16px] text-white my-1 font-['Raleway']">
+                  Phone Number
+                </p>
+                <p class="font-[700] text-[12px] text-[#EBB600] font-['Raleway']">
+                  +91 9876543210
+                </p>
+              </div>
+              <div class="flex flex-col justify-cenyer items-center ">
+                <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
+                  <i class="fa-regular fa-envelope text-white text-[30px]"></i>
+                </div>
+                <p class="font-[700] text-[16px] text-white my-1 font-['Raleway']">
+                  Email Address
+                </p>
+                <p class="font-[700] text-[12px] text-[#EBB600] font-['Raleway']">
+                  footspot333@gmail.com
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-around items-center my-3"> 
+              <div class="flex flex-col justify-cenyer items-center ">
+                <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
+                  <i class="fa-brands fa-whatsapp text-white text-[30px]"></i>
+                </div>
+                <p class="font-[700] text-[16px] text-white my-1 font-['Raleway']">
+                  WhatsApp Number
+                </p>
+                <p class="font-[700] text-[12px] text-[#EBB600] font-['Raleway']">
+                  +91 7638293647
+                </p>
+              </div>
+              <div class="flex flex-col justify-cenyer items-center ">
+                <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
+                  <i class="fa-solid fa-location-dot text-white text-[30px]"></i>
+                </div>
+                <p class="font-[700] text-[16px] text-white my-1 font-['Raleway']">
+                  Location
+                </p>
+                <p class="font-[700] text-[10px] text-center text-[#EBB600] font-['Raleway']">
+                  1/200 Main road, Kallaikurichi,
+                  <br>
+                  Tamil Nadu - 606202
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center mt-6">
+                <div class="flex flex-col justify-center items-center  gap-3">
+                  <h3 class="font-[400] text-[20px] text-white font-['Kavoon']">
+                    Social Media
+                  </h3>
+                  <div class="flex justify-center items-center gap-8">
+                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]">
+                      <i class="fab fa-facebook-square fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]">
+                      <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]">
+                      <i class="fab fa-instagram-square fa-3x"></i>
+            </div>
+
+          </div>
+        </div>
       </div>
      </section>
 
