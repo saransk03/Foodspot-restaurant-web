@@ -33,21 +33,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="relative">
 
     <!-- Navbar -->
     <nav 
-      class="2xl:container rounded-b-[0px] shadow-black shadow-md mx-auto bg-white sticky top-0 left-0 z-20"
+      class="container rounded-b-[0px] shadow-black shadow-md mx-auto bg-white sticky top-0 left-0 z-20"
     >
       <div class="w-[80%] mx-auto grid grid-cols-1 py-[10px]">
-        <div class="flex justify-around items-center">
+        <div class="flex justify-between md:justify-around items-center">
           <div class="flex justify-start items-center gap-2">
             <img
               src="https://ik.imagekit.io/saransk03/assests/Foodspot%20web/logo.png"
               alt="logo-img"
-              class="w-[40px]"
+              class="md:w-[40px] w-[30px]"
             />
-            <p class="text-[25px] font-[700] text-[#EBB600] logo">
+            <p class="md:text-[25px] font-[700] text-[#EBB600] logo">
               <span class="text-[#D10817]">Food</span>Spot
             </p>
           </div>
@@ -102,9 +102,57 @@
             </div>
 
           </div>
+
+          <!-- Navbar mobile -->
+           <div class="md:hidden flex">
+              <i id="burger" class="fa-solid fa-bars text-[20px]"></i>
+              <i id="cross" class="fa-solid fa-x text-[20px] hidden"></i>
+           </div>
+
         </div>
       </div>
     </nav>
+
+      <!-- navbar mobile -->
+      <div id="mobile-nav" class="container hidden mx-auto fixed md:hidden bottom-0 bg-white transition-all transition-[0.3s ease]  px-3 py-2 z-30">
+        <div class="w-[90%] mx-auto grid grid-cols-1">
+          <div class="flex justify-between items-center flex-wrap">
+            <a href="#home"><i class="fa-solid fa-house text-[18px]"></i>
+            </a>
+            <a href="#offers">
+              <img
+                src="./Assests/discount.png"
+                alt="discount img"
+                class="w-[21px]"
+              />
+            </a>
+            <a href="#menu">
+              <img
+                src="./Assests/food-menu.png"
+                alt="menu img"
+                class="w-[21px]"
+              />
+            </a>
+            <a href="#services">
+              <img
+                src="./Assests/food-service.png"
+                alt="service img"
+                class="w-[29px]"
+              />
+            </a>
+            <a href="#reviews">
+              <img
+              src="./Assests/customer-review.png"
+              alt="review img"
+              class="w-[25px]"
+            />
+            </a>
+            <a href="#contact">
+              <i class="fa-solid fa-phone text-[20px]"></i>
+            </a>
+          </div>
+        </div>
+       </div>
 
     <!-- Hero section -->
     <section id="home">
@@ -190,7 +238,7 @@
                 <img class="lg:w-[280px] w-[120px]  rounded-lg" src="./Assests/offer2.jpg" alt=""  />
                 <img class="lg:w-[280px] w-[120px]  rounded-lg" src="./Assests/offer4.jpg" alt=""  />
               </div>
-              <img class="md:w-[600px] w-[200px]  rounded-lg" src="./Assests/offer3.jpg" alt=""  />
+              <img class="md:w-[600px] w-[120px]  rounded-lg" src="./Assests/offer3.jpg" alt=""  />
             </div>
       </div>
     </section>
@@ -264,28 +312,28 @@
                   <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
                   data-service="Dine-in Service" 
                   data-details="Experience a warm, inviting atmosphere where our friendly staff delivers exceptional service at your table. Whether it's a casual lunch or a special occasion, we provide an environment perfect for any gathering. Enjoy freshly prepared dishes and an ambiance designed to elevate your dining experience. Relax, unwind, and let us take care of everything.">
-                    <img src="./Assests/dinein.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px] object-cover shadow-lg shadow-black">
+                    <img src="./Assests/dinein.jpg" alt="" class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black">
                     Dine-in Service
                   </div>
 
                   <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
                   data-service="Home Delivery" 
                   data-details="Craving your favorite meal but can’t make it to the restaurant? We’ve got you covered! Our reliable delivery service brings hot, freshly made dishes straight to your door. Whether it's lunch, dinner, or a late-night snack, enjoy restaurant-quality meals from the comfort of your home.">
-                    <img src="./Assests/delivery.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px] object-cover shadow-lg shadow-black">
+                    <img src="./Assests/delivery.jpg" alt="" class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black">
                     Home Delivery
                   </div>
 
                   <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
                   data-service="Catering Services" 
                   data-details="Make your next event unforgettable with our customizable catering services. Whether it’s a wedding, corporate event, or family gathering, we offer a wide range of menu options to suit your needs. From small parties to large-scale events, our team ensures timely, professional service and mouth-watering dishes that impress every guest.">
-                    <img src="./Assests/catering.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px]  object-cover shadow-lg shadow-black">
+                    <img src="./Assests/catering.jpg" alt="" class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black">
                     Catering Services
                   </div>
 
                   <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
                   data-service="Chef’s Table Experience" 
                   data-details="Elevate your dining with an exclusive Chef’s Table experience, where every dish is specially crafted for you. Watch as our head chef creates a bespoke multi-course menu using the freshest ingredients and culinary creativity. Ideal for food enthusiasts or special celebrations, this intimate experience offers personalized service and unparalleled flavors in a private setting.">
-                    <img src="./Assests/chef.jpg" alt="" class="h-[230px] w-[230px] rounded-[250px] object-cover shadow-lg shadow-black">
+                    <img src="./Assests/chef.jpg" alt="" class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black">
                    Chef’s Table Experience
                   </div>
                 </div>
@@ -294,8 +342,8 @@
             </div>
             <div class="flex flex-col justify-start items-start py-6 ">
               <div class="flex flex-col ">
-                <h1 id="servicename" class="font-['Raleway'] text-center lg:text-start text-[30px] font-[900] py-3"><span class="text-[#D10817]" id="servicefirst">Dine-in</span> Service</h1>
-                <p class="font-['Raleway'] font-[600] w-[380px]" id="details">Experience a warm, inviting atmosphere where our friendly staff delivers exceptional service at your table. Whether it's a casual lunch or a special occasion, we provide an environment perfect for any gathering. Enjoy freshly prepared dishes and an ambiance designed to elevate your dining experience. Relax, unwind, and let us take care of everything.</p>
+                <h1 id="servicename" class="font-['Raleway'] text-center lg:text-start text-[20px] md:text-[30px] font-[900] py-3"><span class="text-[#D10817]" id="servicefirst">Dine-in</span> Service</h1>
+                <p class="font-['Raleway'] font-[600] text-[12px] md:w-[380px]" id="details">Experience a warm, inviting atmosphere where our friendly staff delivers exceptional service at your table. Whether it's a casual lunch or a special occasion, we provide an environment perfect for any gathering. Enjoy freshly prepared dishes and an ambiance designed to elevate your dining experience. Relax, unwind, and let us take care of everything.</p>
                
               </div>
               <div class=" flex justify-center items-center text-start mt-4">
@@ -310,7 +358,7 @@
 
     <!-- customer-review -->
      <section id="reviews">
-      <div class="2xl:container mx-auto">
+      <div class="container mx-auto">
        <div class="md:w-[80%] w-[90%] mx-auto grid grid-cols-1">
           <h1 class="home-h md:text-[40px] text-[25px] md:ml-5 text-[#D10817]">
             Customer's <span class="text-black">Review</span>

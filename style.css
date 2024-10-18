@@ -298,7 +298,7 @@ section{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 120%;
+        width: 90%;
         max-width: 500px;
         overflow: hidden;
         height: 350px;
@@ -317,8 +317,29 @@ section{
             left: -200px;
         }
     }
-
-
+    .swiper-s {
+        width: 220px;
+        height: 300px;
+      }
+      .swiper-slide {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+    #services-content{
+        background: none;
+    }
+    #services{
+        background: url(https://i.pinimg.com/564x/a3/ae/ff/a3aeff532e77b66647cc33b95e0c5206.jpg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+    #i-items:hover p{
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.3s ease;
+    }
 
 }
   

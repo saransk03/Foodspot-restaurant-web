@@ -122,4 +122,18 @@ var swiperS = new Swiper(".mySwiper-s", {
   }
 });
 
+const menuBar = document.getElementById("burger")
+const crossBar = document.getElementById("cross")
+const navElement = document.getElementById("mobile-nav")
 
+menuBar.addEventListener("click",() =>{
+   menuBar.classList.add("hidden")
+   crossBar.classList.remove("hidden")
+   navElement.classList.remove("hidden")
+  })
+
+crossBar.addEventListener("click",() =>{
+   menuBar.classList.remove("hidden")
+   crossBar.classList.add("hidden")
+   navElement.classList.add("hidden")
+})
