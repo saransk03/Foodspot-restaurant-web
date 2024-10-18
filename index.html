@@ -32,6 +32,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <!-- animation scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body class="relative">
 
@@ -163,17 +166,18 @@
           >
             <h1
               class="md:text-[55px] text-[30px] home-h text-[#D10817] md:leading-[50px]"
+              data-aos="fade-right"  data-aos-duration="2000"
             >
               "Your Destination
             </h1>
-            <p class="home-h md:ml-[20px] text-[20px] md:text-[35px]">
+            <p class="home-h md:ml-[20px] text-[20px] md:text-[35px]"  data-aos="fade-right"  data-aos-duration="2000">
               For Delicious Moments"
             </p>
-            <p class="md:ml-[20px] mt-3 text-[12px] md:text-[20px] text-white font-['Kavoon']">
+            <p class="md:ml-[20px] mt-3 text-[12px] md:text-[20px] text-white font-['Kavoon']"  data-aos="fade-right"  data-aos-duration="2000">
               Where delicious flavors meet a cozy atmosphere. Join us and let
               your taste buds embark on an unforgettable adventure!
             </p>
-            <div class="flex md:ml-[20px] mt-[20px] gap-4">
+            <div class="flex md:ml-[20px] mt-[20px] gap-4" data-aos="zoom-in-up"  data-aos-duration="2000">
               <a
                 href=""
                 class="bg-[#D10817] btn text-[12px] md:text-[15px] px-3 py-1 text-[#EBB600] font-['Raleway'] font-[600] rounded-[5px]"
@@ -189,7 +193,7 @@
             </div>
 
             <div class="flex mt-[50px] md:mt-[100px] gap-9">
-              <div id="box1" class="flex justify-center items-center box">
+              <div id="box1" class="flex justify-center items-center box" data-aos="zoom-in-up"  data-aos-duration="2000">
                 <img
                   src="./Assests/biryani.png"
                   alt=""
@@ -197,11 +201,11 @@
                 />
                 <div class="box-card"></div>
               </div>
-              <div id="box2" class="flex justify-center items-center box">
+              <div id="box2" class="flex justify-center items-center box" data-aos="zoom-in-up"  data-aos-duration="2000">
                 <img src="./Assests/burger.png" alt="" class="w-[100px] z-10" />
                 <div class="box-card"></div>
               </div>
-              <div id="box3" class="flex justify-center items-center box">
+              <div id="box3" class="flex justify-center items-center box" data-aos="zoom-in-up"  data-aos-duration="2000">
                 <img
                   src="./Assests/fried-chicken.png"
                   alt=""
@@ -211,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center items-center order-1 md:order-2">
+          <div class="flex justify-center items-center order-1 md:order-2"  data-aos="fade-left"  data-aos-duration="2000">
             <img
               id="home-img"
               class="scale-up-top"
@@ -226,19 +230,19 @@
 
     <!--offer Swiper -->
     <section id="offers" class="2xl:container mx-auto py-[40px] md:py-[60px]">
-      <div class="md:w-[80%] w-[90%] mx-auto flex justify-start items-center">
+      <div class="md:w-[80%] w-[90%] mx-auto flex justify-start items-center" data-aos="zoom-in-up"  data-aos-duration="2000">
         <h1 class="home-h md:text-[40px] text-[26px] md:ml-5 text-[#D10817]">
           Today's <span class="text-black">Offers</span>
         </h1>
       </div>
       <div class="md:w-[70%] w-[80%] flex justify-center items-center mx-auto gap-1 md:gap-4 mt-[30px]">
-            <img class="lg:w-[300px] w-[155px] rounded-lg" src="./Assests/offer1.jpg" alt=""  />
+            <img class="lg:w-[300px] w-[155px] rounded-lg" src="./Assests/offer1.jpg" alt="" data-aos="zoom-in-up"  data-aos-duration="2000" />
             <div class="flex flex-col gap-1 md:gap-5">
               <div class="flex flex-col md:flex-row justify-center gap-1 md:gap-4">
-                <img class="lg:w-[280px] w-[120px]  rounded-lg" src="./Assests/offer2.jpg" alt=""  />
-                <img class="lg:w-[280px] w-[120px]  rounded-lg" src="./Assests/offer4.jpg" alt=""  />
+                <img class="lg:w-[280px] w-[120px]  rounded-lg" src="./Assests/offer2.jpg" alt=""  data-aos="zoom-in-up"  data-aos-duration="2000"/>
+                <img class="lg:w-[280px] w-[120px]  rounded-lg" src="./Assests/offer4.jpg" alt="" data-aos="zoom-in-up"  data-aos-duration="2000" />
               </div>
-              <img class="md:w-[600px] w-[120px]  rounded-lg" src="./Assests/offer3.jpg" alt=""  />
+              <img class="md:w-[600px] w-[120px]  rounded-lg" src="./Assests/offer3.jpg" alt=""  data-aos="zoom-in-up"  data-aos-duration="2000"/>
             </div>
       </div>
     </section>
@@ -247,14 +251,14 @@
     <section id="menu">
       <div class="2xl:container mx-auto">
         <div class="md:w-[80%] w-[90%] mx-auto grid grid-cols-1">
-          <div class="flex justify-start items-start">
+          <div class="flex justify-start items-start" data-aos="zoom-in-up"  data-aos-duration="2000">
             <h1 class="home-h md:text-[40px] text-[26px] md:ml-5 text-[#D10817]">
               Our <span class="text-black"> Menus</span>
             </h1>
           </div>
           <div
             id="card-container"
-            class="flex justify-center items-center gap-4 md:gap-8 mt-[30px] flex-wrap"
+            class="flex justify-center items-center gap-4 md:gap-8 mt-[30px] flex-wrap" data-aos="zoom-in-up"  data-aos-duration="2000"
           >
             <div
               id="card"
@@ -298,7 +302,7 @@
     <section id="services">
       <div class="2xl:container mx-auto">
         <div class="w-[80%] mx-auto grid grid-cols-1">
-          <div>
+          <div data-aos="zoom-in-up"  data-aos-duration="2000">
             <h1 class="home-h md:text-[40px] text-[26px] md:ml-5 text-[#D10817]">
               Our <span class="text-black">Services</span>
             </h1>
@@ -307,7 +311,7 @@
           <div class="w-[80%] grid grid-cols-1 lg:grid-cols-2 mx-auto py-6 mt-4" id="services-content">
             <!-- Swiper -->
             <div class="flex justify-center items-center py-3 px-6">
-              <div class="swiper-s mySwiper-s ">
+              <div class="swiper-s mySwiper-s " data-aos="zoom-in-up"  data-aos-duration="2000">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide flex flex-col justify-center items-center font-['Raleway'] gap-2" 
                   data-service="Dine-in Service" 
@@ -340,7 +344,7 @@
               </div>
               
             </div>
-            <div class="flex flex-col justify-start items-start py-6 ">
+            <div class="flex flex-col justify-start items-start py-6 " data-aos="zoom-in-up"  data-aos-duration="2000">
               <div class="flex flex-col ">
                 <h1 id="servicename" class="font-['Raleway'] text-center lg:text-start text-[20px] md:text-[30px] font-[900] py-3"><span class="text-[#D10817]" id="servicefirst">Dine-in</span> Service</h1>
                 <p class="font-['Raleway'] font-[600] text-[12px] md:w-[380px]" id="details">Experience a warm, inviting atmosphere where our friendly staff delivers exceptional service at your table. Whether it's a casual lunch or a special occasion, we provide an environment perfect for any gathering. Enjoy freshly prepared dishes and an ambiance designed to elevate your dining experience. Relax, unwind, and let us take care of everything.</p>
@@ -359,13 +363,13 @@
     <!-- customer-review -->
      <section id="reviews">
       <div class="container mx-auto">
-       <div class="md:w-[80%] w-[90%] mx-auto grid grid-cols-1">
+       <div class="md:w-[80%] w-[90%] mx-auto grid grid-cols-1" data-aos="zoom-in-up"  data-aos-duration="2000">
           <h1 class="home-h md:text-[40px] text-[25px] md:ml-5 text-[#D10817]">
             Customer's <span class="text-black">Review</span>
           </h1>
        </div>
        <div class="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 py-4 md:mt-6">
-        <div class="flex justify-center items-center gap-7 card-wrapper">
+        <div class="flex justify-center items-center gap-7 card-wrapper" data-aos="zoom-in-up"  data-aos-duration="2000">
 
           <div class="review review-1 flex flex-col justify-center items-center py-5 px-6 bg-slate-200 rounded-[15px] border-[3px] border-gray-400">
             <div class="bg-yellow-600 w-[70px] h-[70px] rounded-[70px] md:w-[120px] md:h-[120px] md:rounded-[150px] flex justify-center items-center">
@@ -416,9 +420,6 @@
           </div>
         
         </div>
-
-
-
        </div>
       </div>
      </section>
@@ -427,7 +428,7 @@
      <section id="contact">
       <div class="2xl:container mx-auto">
         <div class="w-[90%] md:w-[90%] lg:w-[75%] grid grid-cols-1 mx-auto">
-          <div class="hidden md:flex justify-between items-center  mt-[-20px]">
+          <div class="hidden md:flex justify-between items-center  mt-[-20px]" data-aos="zoom-in-up"  data-aos-duration="2000">
             <div class="flex justify-start items-center gap-2">
               <img
                 src="https://ik.imagekit.io/saransk03/assests/Foodspot%20web/logo.png"
@@ -439,7 +440,7 @@
               </p>
             </div>
   
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center" >
               <ul class="flex gap-6 relative">
                 <li class="font-['Raleway'] font-[700] text-white hover:text-red-700  transition-all transition-[0.3s ease] text-[15px]">
                   <a href="#home">Home </a>
@@ -457,7 +458,7 @@
 
         <div class="w-[90%] md:w-[90%] lg:w-[75%] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto">
           
-          <div class="flex flex-col justify-center items-center lg:mt-[40px] bg-gray-800 px-2 py-6 rounded-2xl">
+          <div class="flex flex-col justify-center items-center lg:mt-[40px] bg-gray-800 px-2 py-6 rounded-2xl" data-aos="zoom-in-up"  data-aos-duration="2000">
             <div class="flex flex-col items-start justify-center">
               <h1 class="font-[400] text-[25px] md:text-[38px] text-white font-['Kavoon'] leading-7 md:leading-10" >
                 Contact Us
@@ -467,7 +468,7 @@
               </p>
             </div>
 
-            <div class="flex justify-center items-center md:ml-[40px] lg:mt-[30px] px-10 py-2">
+            <div class="flex justify-center items-center md:ml-[40px] lg:mt-[30px] px-10 py-2" data-aos="zoom-in-up"  data-aos-duration="2000">
               <form class="flex flex-col justify-center items-center gap-5">
                 <div class="flex flex-col justify-center items-start">
                   <label for="name" class="font-[600] text-[14px] text-white font-['Raleway'] py-1">Name :</label>
@@ -494,11 +495,11 @@
           </div>
 
           <div class="flex flex-col mt-[40px] gap-4">
-            <h2 class="font-[400] text-center text-[20px] text-white font-['Kavoon'] my-4">
+            <h2 class="font-[400] text-center text-[20px] text-white font-['Kavoon'] my-4" data-aos="zoom-in-up"  data-aos-duration="2000">
               Contact Information
             </h2>
             <div class="flex justify-around items-center my-3">
-              <div class="flex flex-col justify-cenyer items-center ">
+              <div class="flex flex-col justify-cenyer items-center " data-aos="zoom-in-up"  data-aos-duration="2000">
                 <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
                   <i class="fa-solid fa-phone text-white text-[30px]"></i>
                 </div>
@@ -509,7 +510,7 @@
                   +91 9876543210
                 </p>
               </div>
-              <div class="flex flex-col justify-cenyer items-center ">
+              <div class="flex flex-col justify-cenyer items-center " data-aos="zoom-in-up"  data-aos-duration="2000">
                 <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
                   <i class="fa-regular fa-envelope text-white text-[30px]"></i>
                 </div>
@@ -523,7 +524,7 @@
             </div>
 
             <div class="flex justify-around items-center my-3"> 
-              <div class="flex flex-col justify-cenyer items-center ">
+              <div class="flex flex-col justify-cenyer items-center " data-aos="zoom-in-up"  data-aos-duration="2000">
                 <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
                   <i class="fa-brands fa-whatsapp text-white text-[30px]"></i>
                 </div>
@@ -534,7 +535,7 @@
                   +91 7638293647
                 </p>
               </div>
-              <div class="flex flex-col justify-cenyer items-center ">
+              <div class="flex flex-col justify-cenyer items-center " data-aos="zoom-in-up"  data-aos-duration="2000">
                 <div class="border-white border-[2px] p-3 w-[60px] h-[60px] rounded-[100px] flex justify-center items-center">
                   <i class="fa-solid fa-location-dot text-white text-[30px]"></i>
                 </div>
@@ -551,24 +552,23 @@
 
             <div class="flex justify-center mt-6">
                 <div class="flex flex-col justify-center items-center  gap-3">
-                  <h3 class="font-[400] text-[20px] text-white font-['Kavoon']">
+                  <h3 class="font-[400] text-[20px] text-white font-['Kavoon']" data-aos="zoom-in-up"  data-aos-duration="2000">
                     Social Media
                   </h3>
                   <div class="flex justify-center items-center gap-8">
-                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]">
+                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]" data-aos="zoom-in-up"  data-aos-duration="2000">
                       <i class="fab fa-facebook-square fa-3x"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]">
+                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]" data-aos="zoom-in-up"  data-aos-duration="2000">
                       <i class="fab fa-twitter-square fa-3x"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]">
+                    <a href="#" class="text-white hover:text-[#EBB600] transition-all transition-[0.3s ease]" data-aos="zoom-in-up"  data-aos-duration="2000">
                       <i class="fab fa-instagram-square fa-3x"></i>
+                  </div>
+                </div>
             </div>
-
           </div>
-        </div>
-      </div>
-     </section>
+       </section>
 
      <!-- footer -->
       <footer class="2xl:container bg-black">
@@ -579,6 +579,10 @@
       </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
